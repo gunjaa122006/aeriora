@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="AERIS zeolite air purifiers silently absorb odors, moisture, and mold from your home — with zero power and zero waste. Nature's Filter, Reimagined.">
+  <title>AERIS — Nature's Filter, Reimagined | Zeolite Air Purifiers</title>
+
+  <!-- Preload fonts to avoid layout shifts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600;700&display=swap"
+    as="style">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Embed stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Razorpay Checkout Integration Script -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+</head>
+
+<body>
+  <!-- Fixed background video wrapper -->
+  <div class="bg-wrapper"></div>
+  <video autoplay loop muted playsinline id="bg-video">
+    <source src="bg.mp4" type="video/mp4">
+  </video>
+
+  <!-- ==========================================
+       SECTION 1: STICKY NAVIGATION BAR
+       ========================================== -->
+  <header>
+    <div class="container nav-container">
+      <!-- Logo Block -->
+      <a href="#home" class="logo-link" id="logo-home">
+        <div class="logo-icon-wrapper">
+          <div class="logo-watercolor"></div>
+          <span class="logo-monogram">AR</span>
+        </div>
+        <div class="logo-text-block">
+          <span class="logo-wordmark">AERIS</span>
+          <span class="logo-tagline">NATURE'S FILTER, REIMAGINED</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links (Desktop) -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#customizer" class="nav-link">Products</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#testimonials" class="nav-link">About</a></li>
+          <li><a href="#faq" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Cart Actions and CTA -->
+      <div class="nav-actions">
+        <button class="cart-icon-btn" id="nav-cart-btn" aria-label="Open Shopping Cart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" id="nav-cart-badge">1</span>
+        </button>
+        <a href="#customizer" class="btn btn-primary btn-sm">Order Now</a>
+
+        <!-- Mobile hamburger -->
+        <button class="menu-toggle" id="menu-burger" aria-label="Toggle Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile navigation drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#customizer" class="mobile-nav-link">Products</a></li>
+      <li><a href="#how-it-works" class="mobile-nav-link">How It Works</a></li>
+      <li><a href="#testimonials" class="mobile-nav-link">About</a></li>
+      <li><a href="#faq" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+      <a href="#customizer" class="btn btn-primary btn-full">Order Now</a>
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       SECTION 2: HERO SECTION
+       ========================================== -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+
+      <!-- Hero text and info -->
+      <div class="hero-content reveal-on-scroll">
+        <span class="eyebrow">100% Natural · Zero Electricity · Rechargeable</span>
+        <h1 class="hero-h1">Breathe Air the Way Nature Intended</h1>
+        <p class="hero-subtext">
+          AERIS zeolite air purifiers silently absorb odors, moisture, and mold from your home — with zero power and
+          zero waste.
+        </p>
+        <div class="hero-actions">
+          <a href="#customizer" class="btn btn-primary">Shop Now &rarr;</a>
+          <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge-item">
+            <svg class="icon-inline icon-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41">
+              </path>
+            </svg> Rechargeable in Sunlight
+          </div>
+          <div class="badge-item">
+            <svg class="icon-inline icon-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 22C2 22 6 18 12 17C18 16 22 11 22 2C22 2 13 2 8 8C3 14 2 22 2 22Z"></path>
+              <path d="M12 17L8 8"></path>
+            </svg> 100% Natural Minerals
+          </div>
+          <div class="badge-item">
+            <svg class="icon-inline icon-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg> Zero Electricity
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visuals -->
+      <div class="hero-image-wrapper reveal-on-scroll">
+        <div class="hero-image-card">
+          <img src="aeroguard.jpeg" alt="AERIS Aero-Flow Guard Zeolite Purifier Leaf Pattern Wooden Box"
+            style="width: 100%; border-radius: 6px; aspect-ratio: 4/3; object-fit: cover; border: 1px solid var(--border-color); display: block;">
+          <div style="text-align: center; margin-top: 1rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.25rem;">AERO-FLOW GUARD</h3>
+            <p style="font-family: var(--font-sans); font-size: 0.85rem; color: #6A6A5E;">Carved Leaf Pattern Box in
+              Walnut Brown</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section transition waves -->
+  <div class="wavy-divider">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,64 C240,112 480,120 720,80 C960,40 1200,48 1440,64 L1440,120 L0,120 Z" fill="#E8F5E4"></path>
+    </svg>
+  </div>
+
+
+  <!-- ==========================================
+       SECTION 3: WHAT IS AERIS? (Why It Works)
+       ========================================== -->
+  <section class="info-section">
+    <div class="container">
+
+      <div class="info-header reveal-on-scroll">
+        <span class="eyebrow">Natural Purification</span>
+        <h2 class="info-title">Earth Born Minerals. Air Born Freshness.</h2>
+      </div>
+
+      <div class="info-grid">
+        <!-- Feature cards (4 grid cells) -->
+        <div class="features-grid reveal-on-scroll">
+          <div class="feature-card">
+            <div class="feature-icon-title">
+              <svg class="icon-feature" viewBox="0 0 24 24">
+                <path
+                  d="M19 21H5a2 2 0 0 1-2-2V14.5a3 3 0 0 0 1-2.24l2-3.14V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v5.12l2 3.14a3 3 0 0 0 1 2.24V19a2 2 0 0 1-2 2z">
+                </path>
+                <line x1="6" y1="2" x2="18" y2="2"></line>
+                <line x1="6" y1="12" x2="18" y2="12"></line>
+              </svg>
+              <h3 class="feature-title">Absorbs Pollutants</h3>
+            </div>
+            <p class="feature-desc">Captures harmful gases, sulfur dioxide, water vapour and VOCs like a molecular
+              sponge</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-title">
+              <svg class="icon-feature" viewBox="0 0 24 24">
+                <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2">
+                </path>
+              </svg>
+              <h3 class="feature-title">Purifies Air</h3>
+            </div>
+            <p class="feature-desc">Micropores sized perfectly to catch household fumes and industrial gases</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-title">
+              <svg class="icon-feature" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M12 2a4 4 0 0 0-4 4c0 2.5 4 6 4 6s4-3.5 4-6a4 4 0 0 0-4-4z"></path>
+                <path d="M12 22a4 4 0 0 0 4-4c0-2.5-4-6-4-6s-4 3.5-4 6a4 4 0 0 0 4 4z"></path>
+                <path d="M22 12a4 4 0 0 0-4-4c-2.5 0-6 4-6 4s3.5 4 6 4a4 4 0 0 0 4-4z"></path>
+                <path d="M2 12a4 4 0 0 0 4 4c2.5 0 6-4 6-4s-3.5-4-6-4a4 4 0 0 0-4 4z"></path>
+              </svg>
+              <h3 class="feature-title">Eliminates Odors</h3>
+            </div>
+            <p class="feature-desc">Neutralizes ammonia, hydrogen sulphide, and volatile organic compounds</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-title">
+              <svg class="icon-feature" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <h3 class="feature-title">Prevents Mold</h3>
+            </div>
+            <p class="feature-desc">Reduces bacteria, mold, and other infectional microorganisms naturally</p>
+          </div>
+        </div>
+
+        <!-- Botanical copy block -->
+        <div class="info-copy-block reveal-on-scroll">
+          <p class="info-copy-text">
+            "Zeolite is a microporous crystalline mineral formed from volcanic ash."
+          </p>
+          <p class="info-copy-subtext">
+            Unlike chemical sprays that mask odors or electric purifiers that cost ₹5,000–₹10,000 annually to run, AERIS
+            works passively — and recharges in sunlight for free.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section transition waves back to linen background -->
+  <div class="wavy-divider" style="transform: scaleY(-1); margin-top: -1px;">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,64 C240,112 480,120 720,80 C960,40 1200,48 1440,64 L1440,120 L0,120 Z" fill="#E8F5E4"></path>
+    </svg>
+  </div>
+
+
+  <!-- ==========================================
+       SECTION 4: PRODUCT CATALOG + CUSTOMIZATION
+       ========================================== -->
+  <section id="customizer" class="customizer-section">
+    <div class="container">
+
+      <div class="section-head reveal-on-scroll">
+        <span class="eyebrow">Configure Your Unit</span>
+        <h2 class="section-title">Design Your AERIS. Own Your Air.</h2>
+        <p class="section-subtitle">Choose your product, then choose your packaging — because beautiful things work
+          better.</p>
+      </div>
+
+      <!-- Main Configurator Layout Grid (2 Columns on Desktop) -->
+      <div class="customizer-layout">
+
+        <!-- Left Side: Configurator Steps -->
+        <div class="steps-container">
+
+          <!-- STEP 1: SELECT YOUR PRODUCT -->
+          <div class="step-block reveal-on-scroll" id="step-1">
+            <span class="step-number">Step 01</span>
+            <h3 class="step-title">Select Your Product</h3>
+            <p class="step-desc">Choose the purification formula optimized for your specific room requirements.</p>
+
+            <div class="products-grid">
+
+              <!-- CARD 1: AERO-FLOW GUARD -->
+              <div class="product-card selected" data-product-id="aero_flow_guard">
+                <span class="card-badge">Most Popular</span>
+                <img src="aeropod.png" alt="AERIS Aero-Flow Guard"
+                  style="width: 100%; border-radius: 6px; aspect-ratio: 4/3; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                <h4 class="card-pname">Aero-Flow Guard</h4>
+                <p class="card-pdesc">Natural air filter for living rooms, bedrooms & near AC vents. Absorbs humidity,
+                  musty odors, and stale air.</p>
+
+                <div class="product-meta-specs">
+                  <div class="spec-line"><span class="spec-label">Weight:</span><span class="spec-val">400g</span></div>
+                  <div class="spec-line"><span class="spec-label">Formula:</span><span class="spec-val">70% Zeolite /
+                      20% Carbon / 10% Silica</span></div>
+                  <div class="spec-line"><span class="spec-label">Best For:</span><span class="spec-val">Living &
+                      Bedrooms</span></div>
+                </div>
+
+                <div class="card-footer">
+                  <span class="card-price">₹500</span>
+                  <div class="select-indicator"></div>
+                </div>
+              </div>
+
+              <!-- CARD 2: TAIL-WAG FRESH -->
+              <div class="product-card" data-product-id="tail_wag_fresh">
+                <span class="card-badge">Pet Lovers</span>
+                <img src="tailwag.png" alt="AERIS Tail-Wag Fresh"
+                  style="width: 100%; border-radius: 6px; aspect-ratio: 4/3; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                <h4 class="card-pname">Tail-Wag Fresh</h4>
+                <p class="card-pdesc">Powerful pet odor absorber in a fabric bag. Eliminates pet dander smells
+                  naturally.</p>
+
+                <div class="product-meta-specs">
+                  <div class="spec-line"><span class="spec-label">Weight:</span><span class="spec-val">500g</span></div>
+                  <div class="spec-line"><span class="spec-label">Formula:</span><span class="spec-val">85% Zeolite /
+                      15% Carbon</span></div>
+                  <div class="spec-line"><span class="spec-label">Best For:</span><span class="spec-val">Pet Areas &
+                      Kennels</span></div>
+                </div>
+
+                <div class="card-footer">
+                  <span class="card-price">₹400</span>
+                  <div class="select-indicator"></div>
+                </div>
+              </div>
+
+              <!-- CARD 3: DEO-POD -->
+              <div class="product-card" data-product-id="deo_pod">
+                <span class="card-badge">Compact</span>
+                <img src="deopod.png" alt="AERIS Deo-Pod"
+                  style="width: 100%; border-radius: 6px; aspect-ratio: 4/3; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                <h4 class="card-pname">Deo-Pod</h4>
+                <p class="card-pdesc">Small cotton pouch for closets, shoe racks, and drawers. Keeps clothes and shoes
+                  fresh.</p>
+
+                <div class="product-meta-specs">
+                  <div class="spec-line"><span class="spec-label">Weight:</span><span class="spec-val">250g-300g</span>
+                  </div>
+                  <div class="spec-line"><span class="spec-label">Formula:</span><span class="spec-val">100% Pure
+                      Volcanic Zeolite</span></div>
+                  <div class="spec-line"><span class="spec-label">Best For:</span><span class="spec-val">Wardrobes &
+                      Shoe Racks</span></div>
+                </div>
+
+                <div class="card-footer">
+                  <span class="card-price">₹300</span>
+                  <div class="select-indicator"></div>
+                </div>
+              </div>
+
+              <!-- CARD 4: PURE FLOW (COMING SOON) -->
+              <div class="product-card disabled" data-product-id="pure_flow">
+                <span class="card-badge">Coming Soon</span>
+                <div class="product-img-placeholder">
+                  <svg class="icon-card" style="margin-bottom: 0.5rem;" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.8">
+                    <rect x="1" y="6" width="18" height="12" rx="2" ry="2"></rect>
+                    <line x1="23" y1="11" x2="23" y2="13"></line>
+                  </svg>
+                  <span>[Product: Pure Flow]</span>
+                </div>
+                <h4 class="card-pname">Pure Flow [COMING SOON]</h4>
+                <p class="card-pdesc">Tech-enhanced air filter + dehumidifier combination. Advanced room purification.
+                </p>
+
+                <div class="coming-soon-overlay">
+                  <label style="font-size: 0.75rem; font-weight: 600; color: var(--primary-green);">Notify me when
+                    available:</label>
+                  <form id="coming-soon-form" class="coming-soon-email-group">
+                    <input type="email" id="coming-soon-email" placeholder="Enter your email" required disabled>
+                    <button type="submit" class="btn btn-primary btn-sm" style="min-height: 34px;"
+                      disabled>Submit</button>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- STEP 2: CHOOSE PACKAGING TYPE -->
+          <div class="step-block reveal-on-scroll" id="step-2">
+            <span class="step-number">Step 02</span>
+            <h3 class="step-title">Choose Packaging Type</h3>
+            <p class="step-desc">Select between a luxury carved wooden box or an organic rustic fabric bag pouch.</p>
+
+            <!-- Type Toggles -->
+            <div class="packaging-toggles">
+              <button type="button" class="pack-toggle-btn active" data-pack-type="wood_box">
+                <svg class="icon-inline icon-customizer" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                  </path>
+                </svg> Carved Wooden Box
+              </button>
+              <button type="button" class="pack-toggle-btn" data-pack-type="fabric_bag">
+                <svg class="icon-inline icon-customizer" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M12 2L3 9v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9L12 2z"></path>
+                </svg> Fabric Bag Pouch
+              </button>
+            </div>
+
+            <!-- CONTAINER A: CARVED WOODEN BOX DESIGNS -->
+            <div class="packaging-options-pane active" id="wood-box-pane">
+              <div class="boxes-grid">
+
+                <!-- BOX 1: Leaf Pattern -->
+                <div class="box-card selected" data-box-id="box_leaf_pattern">
+                  <img src="BOX1dark.jpeg" alt="Leaf Pattern Box"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 13/10; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Leaf Pattern</h4>
+                  <p class="opt-desc">Walnut wood box, leaf carve layout, hinged front panel.</p>
+                  <span class="opt-price-mod">Included (+₹0)</span>
+                  <div class="color-options-wrapper">
+                    <span class="swatch-label">Colors:</span>
+                    <div class="swatches-list">
+                      <!-- Swatches injected by JS -->
+                    </div>
+                  </div>
+                </div>
+
+                <!-- BOX 2: Lotus Round -->
+                <div class="box-card" data-box-id="box_lotus_round">
+                  <img src="BOX2dark.jpeg" alt="Lotus Round Box"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 13/10; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Lotus Round</h4>
+                  <p class="opt-desc">Cylindrical design, carved lotus on lid, pull drawer.</p>
+                  <span class="opt-price-mod">+₹50</span>
+                  <div class="color-options-wrapper">
+                    <span class="swatch-label">Colors:</span>
+                    <div class="swatches-list"></div>
+                  </div>
+                </div>
+
+                <!-- BOX 3: Butterfly Garden -->
+                <div class="box-card" data-box-id="box_butterfly_garden">
+                  <img src="butterflyLILAC.jpeg" alt="Butterfly Garden Box"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 13/10; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Butterfly Garden</h4>
+                  <p class="opt-desc">Painted rectangular structure, butterfly and floral patterns.</p>
+                  <span class="opt-price-mod">Included (+₹0)</span>
+                  <div class="color-options-wrapper">
+                    <span class="swatch-label">Colors:</span>
+                    <div class="swatches-list"></div>
+                  </div>
+                </div>
+
+                <!-- BOX 4: Tropical Leaves -->
+                <div class="box-card" data-box-id="box_tropical_leaves">
+                  <img src="leaf1.jpeg" alt="Tropical Leaves Box"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 13/10; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Tropical Leaves</h4>
+                  <p class="opt-desc">Matte-finish box with monstera leaves cutout face.</p>
+                  <span class="opt-price-mod">Included (+₹0)</span>
+                  <div class="color-options-wrapper">
+                    <span class="swatch-label">Colors:</span>
+                    <div class="swatches-list"></div>
+                  </div>
+                </div>
+
+                <!-- BOX 5: Sunburst -->
+                <div class="box-card" data-box-id="box_sunburst">
+                  <img src="sunflower.jpeg" alt="Sunflower Box"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 13/10; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Sunflower</h4>
+                  <p class="opt-desc">Dark walnut wooden box, carved sunflower pattern on front.</p>
+                  <span class="opt-price-mod">Included (+₹0)</span>
+                  <div class="color-options-wrapper">
+                    <span class="swatch-label">Colors:</span>
+                    <div class="swatches-list"></div>
+                  </div>
+                </div>
+
+                <!-- BOX 6: Fretwork -->
+                <div class="box-card" data-box-id="box_fretwork">
+                  <img src="fretlight.jpeg" alt="Fretwork Box"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 13/10; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Fretwork</h4>
+                  <p class="opt-desc">Ornate Moroccan-style lattice-carved bamboo structure.</p>
+                  <span class="opt-price-mod">Included (+₹0)</span>
+                  <div class="color-options-wrapper">
+                    <span class="swatch-label">Colors:</span>
+                    <div class="swatches-list"></div>
+                  </div>
+                </div>
+
+                <!-- BOX 7: Sea Turtle -->
+                <div class="box-card" data-box-id="box_sea_turtle">
+                  <img src="turtBLUE.jpeg" alt="Sea Turtle Box"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 13/10; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Sea Turtle</h4>
+                  <p class="opt-desc">Round ocean blue cylinder, carved turtle, drawer base.</p>
+                  <span class="opt-price-mod">+₹80</span>
+                  <div class="color-options-wrapper">
+                    <span class="swatch-label">Colors:</span>
+                    <div class="swatches-list"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- CONTAINER B: FABRIC BAG DESIGNS -->
+            <div class="packaging-options-pane" id="fabric-bag-pane">
+              <div class="bags-grid">
+
+                <!-- BAG 1: Daisy Dreams -->
+                <div class="bag-card selected" data-bag-id="bag_daisy_dreams">
+                  <img src="daisy.jpeg" alt="Daisy Dreams Bag"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 2/3; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Daisy Dreams</h4>
+                  <p class="opt-desc">Cream linen bag, daisy embroidery, lace trims, cream ribbons.</p>
+                  <div class="bag-tag-selector">
+                    <span class="swatch-label">Tag Label:</span>
+                    <select class="bag-select-dropdown">
+                      <option value="Zeolite">Zeolite</option>
+                      <option value="Deo-Pod">Deo-Pod</option>
+                      <option value="Aero-Guard">Aero-Guard</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- BAG 2: Tree of Life -->
+                <div class="bag-card" data-bag-id="bag_tree_of_life">
+                  <img src="tree.jpeg" alt="Tree of Life Bag"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 2/3; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Tree of Life</h4>
+                  <p class="opt-desc">Natural burlap bag with printed vintage botanical tree art.</p>
+                  <div class="bag-tag-selector">
+                    <span class="swatch-label">Tag Label:</span>
+                    <select class="bag-select-dropdown">
+                      <option value="Zeolite">Zeolite</option>
+                      <option value="Deo-Pod">Deo-Pod</option>
+                      <option value="Aero-Guard">Aero-Guard</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- BAG 3: Celestial Night -->
+                <div class="bag-card" data-bag-id="bag_celestial_night">
+                  <img src="celeste.jpeg" alt="Celestial Night Bag"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 2/3; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Celestial Night</h4>
+                  <p class="opt-desc">Deep navy blue bag with gold foil star & moon prints.</p>
+                  <div class="bag-tag-selector">
+                    <span class="swatch-label">Tag Label:</span>
+                    <select class="bag-select-dropdown">
+                      <option value="Zeolite">Zeolite</option>
+                      <option value="Deo-Pod">Deo-Pod</option>
+                      <option value="Aero-Guard">Aero-Guard</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- BAG 4: Bear Embroidery -->
+                <div class="bag-card" data-bag-id="bag_blue_dreams">
+                  <img src="pet.jpeg" alt="Bear Embroidery Bag"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 2/3; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Bear Embroidery</h4>
+                  <p class="opt-desc">Soft linen fabric bag, cute bear face embroidery, ideal for pet spaces.</p>
+                  <div class="bag-tag-selector">
+                    <span class="swatch-label">Tag Label:</span>
+                    <select class="bag-select-dropdown">
+                      <option value="Zeolite">Zeolite</option>
+                      <option value="Deo-Pod">Deo-Pod</option>
+                      <option value="Aero-Guard">Aero-Guard</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- BAG 5: Teal Polka Heart -->
+                <div class="bag-card" data-bag-id="bag_teal_polka">
+                  <img src="polka.jpeg" alt="Teal Polka Heart Bag"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 2/3; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Teal Polka Heart</h4>
+                  <p class="opt-desc">Mint bag, polka pattern, heart wood button, rope ties.</p>
+                  <div class="bag-tag-selector">
+                    <span class="swatch-label">Tag Label:</span>
+                    <select class="bag-select-dropdown">
+                      <option value="Zeolite">Zeolite</option>
+                      <option value="Deo-Pod">Deo-Pod</option>
+                      <option value="Aero-Guard">Aero-Guard</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- BAG 6: Stargazer Navy -->
+                <div class="bag-card" data-bag-id="bag_stargazer_navy">
+                  <img src="stargazer.jpeg" alt="Stargazer Navy Bag"
+                    style="width: 100%; border-radius: 6px; aspect-ratio: 2/3; object-fit: cover; border: 1px solid var(--border-color); display: block; margin-bottom: 1.25rem;">
+                  <h4 class="opt-name">Stargazer Navy</h4>
+                  <p class="opt-desc">Velvet navy bag, gold moon, bronze bead tassels.</p>
+                  <div class="bag-tag-selector">
+                    <span class="swatch-label">Tag Label:</span>
+                    <select class="bag-select-dropdown">
+                      <option value="Zeolite">Zeolite</option>
+                      <option value="Deo-Pod">Deo-Pod</option>
+                      <option value="Aero-Guard">Aero-Guard</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- STEP 3: QUANTITY & ADDONS -->
+          <div class="step-block reveal-on-scroll" id="step-3">
+            <span class="step-number">Step 03</span>
+            <h3 class="step-title">Quantity &amp; Add-ons</h3>
+            <p class="step-desc">Increase your units or select optional wellness wrapping kits.</p>
+
+            <div class="selectors-layout">
+              <!-- Quantity Incrementor -->
+              <div class="qty-control">
+                <span class="qty-label">Purchase Quantity:</span>
+                <div class="qty-actions">
+                  <button type="button" class="qty-btn" id="qty-dec" aria-label="Decrease quantity">−</button>
+                  <div class="qty-value" id="qty-number">1</div>
+                  <button type="button" class="qty-btn" id="qty-inc" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+
+              <!-- Add-ons Checks -->
+              <div class="addons-list">
+                <label class="addon-item">
+                  <input type="checkbox" id="opt-gift">
+                  <span><svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="8" width="18" height="12" rx="2" ry="2"></rect>
+                      <line x1="12" y1="22" x2="12" y2="8"></line>
+                      <path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5H7.5z"></path>
+                    </svg> Add Eco-Friendly Gift Wrapping (+₹50)</span>
+                </label>
+                <label class="addon-item">
+                  <input type="checkbox" id="opt-recharge" checked>
+                  <span><svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5v-15z">
+                      </path>
+                    </svg> Add Solar Recharge Instructions Card (Free)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Sticky Order Summary -->
+        <div class="summary-column">
+          <div class="summary-wrapper" id="order-summary-panel">
+            <h3 class="summary-title">Order Summary</h3>
+            <div class="summary-details">
+
+              <!-- Product Line -->
+              <div class="summary-row">
+                <span class="summary-label" id="sum-pname">Aero-Flow Guard</span>
+                <span class="summary-value" id="sum-pprice">₹500</span>
+              </div>
+
+              <!-- Packaging Line -->
+              <div class="summary-row">
+                <span class="summary-label" id="sum-packname">Leaf Pattern (#1)</span>
+                <span class="summary-value" id="sum-packdetail">Box - Color: Walnut Brown</span>
+              </div>
+
+              <!-- Quantity Line -->
+              <div class="summary-row">
+                <span class="summary-label">Quantity</span>
+                <span class="summary-value">x<span id="sum-qty">1</span></span>
+              </div>
+
+              <!-- Subtotal Line -->
+              <div class="summary-row">
+                <span class="summary-label">Subtotal</span>
+                <span class="summary-value" id="sum-subtotal">₹500</span>
+              </div>
+
+              <!-- Addons Line -->
+              <div class="summary-row">
+                <span class="summary-label" id="sum-addons">Add-ons</span>
+                <span class="summary-value" id="sum-addons-val">—</span>
+              </div>
+
+              <!-- Grand Total -->
+              <div class="summary-row total-row">
+                <span class="summary-label">Total Amount</span>
+                <span class="summary-value sum-total-val">₹500</span>
+              </div>
+
+            </div>
+
+            <!-- Proceed Button -->
+            <div class="summary-cta-wrap">
+              <button type="button" class="btn btn-primary btn-full" id="btn-proceed-checkout">
+                Proceed to Checkout &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 5: CHECKOUT MODAL & PAYMENT PANEL
+       ========================================== -->
+  <div class="checkout-modal" id="checkout-modal" role="dialog" aria-labelledby="checkout-drawer-title">
+    <div class="checkout-backdrop" id="checkout-backdrop"></div>
+    <div class="checkout-drawer">
+
+      <!-- Drawer Header -->
+      <div class="checkout-header">
+        <h3 class="checkout-title" id="checkout-drawer-title">Delivery Details</h3>
+        <button class="close-modal-btn" id="close-checkout" aria-label="Close Checkout">&times;</button>
+      </div>
+
+      <!-- Form Body -->
+      <div class="checkout-body">
+        <form class="checkout-form">
+
+          <!-- Contact Info -->
+          <div class="form-section-title">Contact Information</div>
+          <div class="form-group">
+            <label for="customer-name">Full Name *</label>
+            <input type="text" id="customer-name" placeholder="E.g. Priya Sharma" required>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="customer-phone">Phone Number (India) *</label>
+              <input type="tel" id="customer-phone" placeholder="10-digit number" required>
+            </div>
+            <div class="form-group">
+              <label for="customer-email">Email Address *</label>
+              <input type="email" id="customer-email" placeholder="priya@example.com" required>
+            </div>
+          </div>
+
+          <!-- Shipping Info -->
+          <div class="form-section-title">Shipping Address</div>
+          <div class="form-group">
+            <label for="customer-address1">Address Line 1 *</label>
+            <input type="text" id="customer-address1" placeholder="Flat, House no., Apartment, Street" required>
+          </div>
+          <div class="form-group">
+            <label for="customer-address2">Address Line 2 (Optional)</label>
+            <input type="text" id="customer-address2" placeholder="Landmark, Locality">
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="customer-city">City *</label>
+              <input type="text" id="customer-city" placeholder="E.g. Pune" required>
+            </div>
+            <div class="form-group">
+              <label for="customer-state">State *</label>
+              <select id="customer-state" required>
+                <option value="">-- Choose State --</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Delhi">Delhi</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Other">Other State</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="customer-pin">PIN Code (6 digits) *</label>
+            <input type="text" id="customer-pin" placeholder="E.g. 411001" required>
+          </div>
+
+          <label class="addon-item" style="margin-top: 0.5rem;">
+            <input type="checkbox" checked>
+            <span style="font-size: 0.85rem;">Billing address is the same as shipping address</span>
+          </label>
+
+          <div class="form-group">
+            <label for="customer-notes">Order Notes (Optional)</label>
+            <textarea id="customer-notes" placeholder="Any delivery instructions for the courier?" rows="2"></textarea>
+          </div>
+
+          <!-- Checkout Summary Recap -->
+          <div class="checkout-recap">
+            <div class="recap-item">
+              <span id="recap-prod-desc">Aero-Flow Guard x 1</span>
+              <span id="recap-prod-price">₹500</span>
+            </div>
+            <div class="recap-item">
+              <span id="recap-pack-desc">Leaf Pattern (Box)</span>
+              <span id="recap-pack-price">+₹0</span>
+            </div>
+            <div class="recap-item">
+              <span id="recap-gift-desc">Gift Wrapping</span>
+              <span id="recap-gift-price">₹0</span>
+            </div>
+            <div class="recap-total">
+              <span>Total Price (incl. GST):</span>
+              <span class="sum-total-val">₹500</span>
+            </div>
+          </div>
+
+          <!-- Razorpay submit trigger button -->
+          <button type="submit" class="btn btn-primary btn-full" id="pay-submit-btn" style="margin-top: 1rem;">
+            Pay <span class="sum-total-val">₹500</span> with Razorpay &rarr;
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SUCCESS DIALOG SCREEN OVERLAY -->
+  <div class="success-overlay" id="success-overlay">
+    <div class="success-content">
+      <div class="checkmark-wrapper">
+        <svg class="checkmark-svg" viewBox="0 0 52 52">
+          <circle class="checkmark-circle" cx="26" cy="26" r="25"></circle>
+          <path class="checkmark-check" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path>
+        </svg>
+      </div>
+      <h2 class="success-title">Order Confirmed!</h2>
+      <p class="success-subtitle">Your AERIS is on its way! <svg class="icon-inline"
+          style="width: 1.15em; height: 1.15em; vertical-align: middle; stroke: var(--primary-green); fill: none; stroke-width: 2;"
+          viewBox="0 0 24 24">
+          <path d="M2 22C2 22 6 18 12 17C18 16 22 11 22 2C22 2 13 2 8 8C3 14 2 22 2 22Z"></path>
+          <path d="M12 17L8 8"></path>
+        </svg></p>
+      <p class="success-text">
+        We'll WhatsApp you the tracking details within 24 hours. Your transaction reference id is:
+      </p>
+      <p style="margin-bottom: 2rem;">
+        <span class="order-id-badge" id="success-order-id">PAY-123456</span>
+      </p>
+      <button type="button" class="btn btn-primary" id="success-home-btn">Back to Home</button>
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       SECTION 6: HOW IT WORKS
+       ========================================== -->
+  <section id="how-it-works" class="how-section reveal-on-scroll">
+    <div class="container">
+
+      <div class="section-head">
+        <span class="eyebrow">Passive System</span>
+        <h2 class="section-title">How Aeris Works</h2>
+        <p class="section-subtitle">No cords, no bills, zero setup. Just pure volcanic minerals active 24/7.</p>
+      </div>
+
+      <div class="timeline-row">
+        <!-- Step 1 -->
+        <div class="timeline-step">
+          <div class="step-icon-circle">
+            <svg class="premium-icon" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 95V55L60 20L105 55V95H15Z"></path>
+              <path d="M60 95V45"></path>
+              <path d="M60 85Q45 80 40 68Q50 65 60 78"></path>
+              <path d="M60 65Q48 55 42 42Q53 40 60 55"></path>
+              <path d="M60 75Q75 70 80 58Q70 55 60 68"></path>
+              <path d="M60 90Q68 85 70 76Q78 78 60 86"></path>
+            </svg>
+            <div class="step-seq-num">1</div>
+          </div>
+          <h3 class="timeline-step-title">Place Your AERIS</h3>
+          <p class="timeline-step-desc">Set your zeolite purifier near an AC vent, window sill, shoe rack, or inside
+            your wardrobe.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-step">
+          <div class="step-icon-circle">
+            <svg class="premium-icon" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M 60,25 L 77.3,35 L 77.3,55 L 60,65 L 42.7,55 L 42.7,35 Z"></path>
+              <path d="M 42.7,55 L 25.4,65 L 25.4,85 L 42.7,95 L 60,85"></path>
+              <path d="M 77.3,55 L 94.6,65 L 94.6,85 L 77.3,95 L 60,85"></path>
+              <circle cx="60" cy="25" r="3" fill="var(--primary-green)"></circle>
+              <circle cx="42.7" cy="35" r="3" fill="var(--primary-green)"></circle>
+              <circle cx="42.7" cy="55" r="3" fill="var(--primary-green)"></circle>
+              <circle cx="60" cy="85" r="3" fill="var(--primary-green)"></circle>
+              <path d="M 25.4,65 C 10,50 15,30 5,25 C 20,25 30,45 25.4,65 Z"></path>
+              <path d="M 25.4,65 Q 15,45 5,25"></path>
+            </svg>
+            <div class="step-seq-num">2</div>
+          </div>
+          <h3 class="timeline-step-title">Let Nature Work</h3>
+          <p class="timeline-step-desc">Zeolite's microporous structure silently absorbs odors, moisture, and mold 24/7
+            — no plug, no filter, no chemicals.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-step">
+          <div class="step-icon-circle">
+            <svg class="premium-icon" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="55" cy="55" r="15"></circle>
+              <path
+                d="M 55,32 L 55,22 M 71.3,38.7 L 78.3,31.7 M 78,55 L 88,55 M 55,78 L 55,88 M 38.7,71.3 L 31.7,78.3 M 32,55 L 22,55 M 38.7,38.7 L 31.7,31.7">
+              </path>
+              <path d="M 70,70 C 80,60 100,70 105,95 C 80,90 70,80 70,70 Z"></path>
+              <path d="M 68,68 L 95,95"></path>
+            </svg>
+            <div class="step-seq-num">3</div>
+          </div>
+          <h3 class="timeline-step-title">Recharge in Sunlight</h3>
+          <p class="timeline-step-desc">Every few months, place it in direct sunlight for 6–8 hours. The heat releases
+            trapped molecules — and it's good as new.</p>
+        </div>
+      </div>
+
+      <!-- Financial Savings Box -->
+      <div class="callout-box">
+        <svg class="icon-inline"
+          style="color: var(--primary-green); width: 1.35em; height: 1.35em; vertical-align: -0.2em; margin-right: 0.5rem;"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .5 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5m6 0H9m6 0a3 3 0 1 1-6 0">
+          </path>
+          <line x1="9" y1="18" x2="15" y2="18"></line>
+          <line x1="10" y1="22" x2="14" y2="22"></line>
+        </svg> <strong>One AERIS purifier lasts YEARS</strong> — not months. Traditional air purifier filters cost
+        ₹5,000–₹10,000 annually. AERIS costs ₹0 to recharge.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Wavy transition before testimonials -->
+  <div class="wavy-divider">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 C360,120 720,10 1080,90 C1260,130 1350,110 1440,80 L1440,120 L0,120 Z" fill="#E8F5E4"
+        opacity="0.3"></path>
+    </svg>
+  </div>
+
+
+  <!-- ==========================================
+       SECTION 7: SOCIAL PROOF / TESTIMONIALS
+       ========================================== -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+
+      <div class="section-head reveal-on-scroll">
+        <span class="eyebrow">Verified Experiences</span>
+        <h2 class="section-title">Homeowner Reviews</h2>
+      </div>
+
+      <div class="testimonials-grid reveal-on-scroll">
+
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "The Leaf Box is sitting on my window sill and it genuinely eliminated the musty smell in my bedroom within
+            a week. My mom keeps asking where I got it!"
+          </p>
+          <span class="testimonial-author">— Priya M., Pune</span>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "Bought the Daisy Bag for my shoe cabinet. The smell was embarrassing before. Now guests don't cringe! Cute
+            enough to leave out too."
+          </p>
+          <span class="testimonial-author">— Rohan K., Bangalore</span>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <svg class="icon-star" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "The sea turtle box is SO beautiful. My kids love it and it works. What more do you want?"
+          </p>
+          <span class="testimonial-author">— Ananya T., Mumbai</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 8: FAQ ACCORDION
+       ========================================== -->
+  <section id="faq" class="faq-section reveal-on-scroll">
+    <div class="container">
+
+      <div class="section-head">
+        <span class="eyebrow">Common Inquiries</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <!-- Q1 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span class="faq-question">How long does one AERIS last?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer-pane">
+            <p class="faq-answer">
+              With proper sunlight recharging every 3–6 months, your AERIS can last 2–5 years.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span class="faq-question">Does it work for pet odors?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer-pane">
+            <p class="faq-answer">
+              Yes! The Tail-Wag Fresh is specifically formulated for pet areas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span class="faq-question">Is zeolite safe for children and pets?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer-pane">
+            <p class="faq-answer">
+              Completely safe. Zeolite is a natural mineral used in food, medicine, and agriculture worldwide.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span class="faq-question">How do I recharge it?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer-pane">
+            <p class="faq-answer">
+              Place in direct sunlight for 6–8 hours on a warm day, or bake at 100–120°C for 1–2 hours in an oven. Let
+              cool completely before reuse.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span class="faq-question">Do you ship across India?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer-pane">
+            <p class="faq-answer">
+              Yes, we ship PAN India. Delivery takes 5–7 business days.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 9: FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container footer-grid">
+
+      <!-- Footer Logo and Info -->
+      <div class="footer-brand">
+        <div>
+          <span class="footer-logo-wordmark">AERIS</span><br>
+          <span class="footer-logo-tagline">NATURE'S FILTER, REIMAGINED</span>
+        </div>
+        <p class="footer-desc">
+          Crafting passive mineral purifiers that protect your home, health, and environment naturally.
+        </p>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-nav">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#customizer">Products &amp; Pricing</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#faq">FAQ Help</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact details -->
+      <div class="footer-contact">
+        <h4 class="footer-title">Contact Us</h4>
+        <div class="contact-info">
+          <p><svg class="icon-inline icon-contact" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg> AERIS Minerals India, 12, Botanical Drive, Pune, MH, 411001</p>
+          <p><svg class="icon-inline icon-contact" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg> support@aerispurifiers.in</p>
+          <p><svg class="icon-inline icon-contact" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg> +91 98765 43210 (Mon-Sat, 9AM - 6PM)</p>
+        </div>
+        <a href="https://wa.me/919876543210?text=Hi%20AERIS,%20I%20have%20a%20question%20about%20your%20zeolite%20air%20purifiers."
+          class="whatsapp-btn" target="_blank" rel="noopener">
+          <!-- WhatsApp Icon -->
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.907h.003c4.368 0 7.926-3.558 7.93-7.926a7.86 7.86 0 0 0-2.33-5.593l.001-.002zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.69-4.98c-.202-.101-1.194-.588-1.378-.653-.185-.069-.32-.102-.454.101-.133.202-.519.653-.636.786-.118.133-.235.148-.438.047-.202-.101-.853-.314-1.624-.997-.599-.533-1.004-1.192-1.122-1.393-.118-.202-.013-.31.088-.41.09-.09.202-.236.302-.354.101-.118.134-.2.202-.334.068-.134.034-.251-.017-.353-.05-.101-.454-1.094-.622-1.503-.164-.396-.328-.342-.454-.349-.118-.006-.253-.007-.388-.007a.788.788 0 0 0-.57.266c-.201.235-.767.75-0.767 1.83 0 1.08.785 2.122.894 2.27.109.148 1.542 2.355 3.737 3.302.522.226.93.36 1.25.462.525.166 1.003.143 1.381.086.42-.063 1.195-.488 1.362-.96.166-.472.166-.877.118-.96-.048-.083-.18-.133-.382-.234z" />
+          </svg>
+          WhatsApp Support
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="container footer-bottom">
+      <p>© 2025 AERIS Purifiers. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#home">Privacy Policy</a>
+        <a href="#home">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Include App state controller -->
+  <script src="app.js" defer></script>
+</body>
+
+</html>
